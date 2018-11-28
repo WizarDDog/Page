@@ -23,7 +23,12 @@
   position: fixed;
   top: 0;
   width:100%;
-  opacity: 0.8
+  opacity: 0.3;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition:  opacity 1s ease-in-out;
+}
+.header:hover{
+  opacity: 0.9;
 }
 #name{
   float: left;
@@ -63,6 +68,11 @@
   position: fixed;
   bottom: 0;
   width:100%;
-  opacity: .7
+  opacity: .2;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition:  opacity 1s ease-in-out;
+}
+.header1:hover{
+  opacity: 0.9;
 }
 
