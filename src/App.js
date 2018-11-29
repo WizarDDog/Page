@@ -11,7 +11,6 @@ class App extends Component {
         super(props);
         this.state = {
             headerName: "header",
-            windowHight: ""
         }
     }
 
@@ -24,18 +23,25 @@ class App extends Component {
         }
     }
 
+    handleScroll(e) {
+        const heightBound = window.innerHeight * 0.8
+        console.log(window.scrollY)
+        if (heightBound > window.scrollY) {
+            // Probably you want to load new cards?
+        }
+    }
 
 
-render() {
+        render() {
     return (
-      <div className="App" id="showScroll" onWheel={(e)=> this.changeHeader(e)} >
+      <div className="App"  onWheel={(e)=> this.changeHeader(e)}  onScroll={(e)=>this.handleScroll(e)}>
           <div className={this.state.headerName} >
               <div id="name" >Name</div>
               <div id="about" >About</div>
               <div id="info" >Info</div>
               <div id="contact" >Contact</div>
           </div>
-        < Header />
+        < Header onScroll={this.handleScroll}/>
         < Body />
         < Body1 />
         < Footer />

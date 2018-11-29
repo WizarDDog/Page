@@ -1,7 +1,7 @@
 .bodyL {
     float: left;
     width: 50%;
-    height: 345px;
+    height: 500px;
     background-size: cover;
     background-image: url("http://digitalbusinessstop.com/wp-content/uploads/2018/05/Wyvern-programming-languages-in-one.jpg");
 }
@@ -10,7 +10,7 @@
     font-family: 'Black Han Sans', sans-serif;
     font-size: 1.8em;
     width: 100%;
-    height: 345px;
+    height: 500px;
 }
 .body {
     width: 100%;
@@ -21,7 +21,7 @@
     line-height: 100px;
 }
 .p{
-    margin-top: 85px;
+    margin: 85px 25px;
     line-height: 100%;
 }
 .button {
@@ -39,21 +39,23 @@
     color: white;
 }
 .buttonList{
+    opacity: 0;
+}
+.buttonList1{
     background-color: white;
     color: black;
     border: 2px solid black;
     padding: 15px 32px;
     font-size: 16px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-
 
     margin: -20px -50px;
     position: relative;
-    top:20%;
     left:50%;
+    opacity: 1;
+    -webkit-transition-duration: 3.5s; /* Safari */
+    transition-duration: 3.5s;
 }
-.buttonList:hover {
+.buttonList1:hover {
     background-color: black;
     color: white;
 }
@@ -68,30 +70,53 @@
     height: 345px;
 }
 .list {
-    width: 70%;
-    margin: auto;
-    margin-top: 50px;
+    margin: 100px auto ;
+    display: table;
     font-size: 1.5em;
+    text-align: center
 }
 li{
-    margin-top: 5px;
+    margin-top: 15px;
 }
-li:active{
-    transition: 1s;
-    left: 0;
-}
+
 .pirmas1 {
-    font-size: 30px;
-    -webkit-transition-duration: 3s; /* Safari */
-    transition-duration: 3s;
+    transform: scale(1.3, 1.3);
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
     opacity: 1;
 
 }
 .pirmas{
-    font-size: 50px;
-opacity: 0;
-    -webkit-transition-duration: 3s; /* Safari */
-    transition-duration: 3s;
+    opacity: 0.1;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    z-index: -1;
+}
+.antras1 {
+    transform: scale(1.4, 1.4);
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-duration: 2s;
+    opacity: 1;
+
+}
+.antras{
+    opacity: 0.1;
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-duration: 2s;
+    z-index: -5;
+}
+
+.trecias1 {
+     transform: scale(1.5, 1.5);
+     -webkit-transition: 3s ease-in-out; /* Safari */
+     transition: 3s ease-in-out;
+     opacity: 1;
+    backface-visibility: hidden
+
+ }
+.trecias{
+    opacity: 0.1;
+
 }
 
 
